@@ -1,0 +1,89 @@
+.angular {
+    background: var(--cor-branca);
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: var(--font-principal);
+    display: flex;
+    justify-content: space-between;
+}
+
+.angular__titulo {
+    color: var(--cor-laranja);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.angular__titulo__secundario {
+    color: var(--cor-azul);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 1em 0;
+}
+
+.angular__texto {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.angular__textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.angular__logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 1em;
+}
+
+.angular__imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.angular__link {
+    background: var(--cor-laranja);
+    padding: 1em;
+    text-align: center;
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .angular {
+        width: 600px;
+        margin: 3em auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .angular__textos {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .angular {
+        height: 230px;
+        margin: 0;
+    }
+
+    .angular__imagens {
+        gap: 10px;
+    }
+
+    .angular__textos {
+        gap: 10px;
+    }
+}
